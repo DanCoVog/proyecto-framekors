@@ -1,5 +1,5 @@
 import React from "react";
-import "./globals.css"; // importa los estilos globales
+import "./globals.css";
 
 const Form = () => {
   return (
