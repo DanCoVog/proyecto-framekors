@@ -1,4 +1,5 @@
 import React from "react";
+import InputCustom from "@/components/common/input";
 import "./globals.css";
 
 const Form = () => {
@@ -8,7 +9,7 @@ const Form = () => {
         <p className="title">Welcome back</p>
         <form className="form">
           <input type="email" className="input" placeholder="Email" />
-          <input type="password" className="input" placeholder="Password" />
+          <InputCustom isPassword={true}  type="password" className="input" placeholder="Password" />
           <p className="page-link">
             <span className="page-link-label">Forgot Password?</span>
           </p>
@@ -19,21 +20,7 @@ const Form = () => {
           <span className="sign-up-link"> Sign up</span>
         </p>
         <div className="buttons-container">
-          <div className="apple-login-button">
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              strokeWidth={0}
-              className="apple-icon"
-              viewBox="0 0 1024 1024"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M747.4 535.7c-.4-68.2..."></path>
-            </svg>
-            <span>Log in with Apple</span>
-          </div>
+         
           <div className="google-login-button">
             <svg
               stroke="currentColor"
